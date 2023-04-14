@@ -1,7 +1,8 @@
 # Django API Simple Template
+
 ## TOC
-    1. [Getting Started](#getting-started)
-    1. [Setting up Postgres](#setting-up-postgres-on-django-project)
+  1. [Getting Started](#getting-started)
+  1. [Setting up Postgres](#setting-up-postgres-on-django-project)
 
 ### Getting started
 

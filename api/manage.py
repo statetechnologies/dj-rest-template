@@ -3,6 +3,11 @@
 import os
 import sys
 
+from dotenv import load_dotenv
+
+# this is to load the .env file that contains DJANGO_SETTINGS_MODULE
+load_dotenv()
+
 
 def main():
     """Run administrative tasks."""

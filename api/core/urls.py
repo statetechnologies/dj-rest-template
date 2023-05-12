@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib import admin
 from django.urls import include, path
 
 from drf_yasg import openapi
@@ -21,9 +22,15 @@ schema_view = get_schema_view(
     permission_classes=[permissions.AllowAny, ],
 )
 
+# admin site settings
+admin.site.site_header = 'Template Admin'
+admin.site.site_title = 'Template Admin Portal'
+admin.site.index_title = 'Welcome to Template API Portal'
+
 
 urlpatterns = [
-    path('dashboard/', custom_admin_site.urls),
+    # path('dashboard/', custom_admin_site.urls),
+    path('dashboard/', admin.site.urls),
     path('api/users/', include('users.urls')),
 
     # api docs
